@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edreyel Adora</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/face-recognition.png">
+    <!-- Css Styling -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Media Query -->
+    <link rel="stylesheet" href="./assets/mobile.css" media="screen and (max-width:600px)">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="home" id="home">
+            <h1 class="home_header">Hello, I'm <span>Edreyel Adora.</span></h1>
+            <h1 class="home_header">An aspiring web developer.</h1>
+            <a href="#nav_bar">
+                <button class="header_btn"><span>View More</span></button>
+            </a>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="nav_bar" id="nav_bar">
+        <ul class="nav_links">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="hidden_nav">
+        <input id="toggle" type="checkbox"></input>
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="#">HOME</a><br>
+                    <a href="#">ABOUT</a><br>
+                    <a href="#">WORK</a><br>
+                    <a href="#">SERVICES</a>
+                </nav>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Main Sections -->
+    <main>
+        <!-- About Section -->
+        <section>
+            <div class="about" id="about">
+                <!-- Section 1: Image and Header-->
+                <img class="profile" src="./assets/images/profile.png" alt="profile image">
+                <div class="abt_text1">
+                    Hi! the name's Edreyel. It's nice to meet you.
+                </div>
+                <!-- Section 2: Description -->
+                <div class="abt_text2">
+                        I am an aspiring MERN Stack web developer. Currently training with Uplift Code Camp with the support of Department of Information and Communication Technology.
+                        I plan to finish the bootcamp and start getting freelance part-time job as a full-time college student.
+                        Currently, my stack is limited to only a few programming languages but my roadmap consist of many more that I plan on learning.
+                </div>
+                <!-- Section 3: Flexbox Cards -->
+                <div class="cards">
+                    <!-- First Card = Left -->
+                    <div class="card_container" id="left_card">
+                        <img src="./assets/images/icons8-repository-100.png" alt="git image">
+                        <h2><b>Git</b></h2>
+                        <p>My understanding on Git is only limited to what I learned by self-studying and by Uplift.</p>
+                        <p class="card_header2">What I know</p>
+                        <ul class="card_text">
+                            <li>Git Basics</li>
+                            <li>Git Branches</li>
+                            <li>Remote Repos</li>
+                            <li>Git Log</li>
+                        </ul>
+                        <p class="card_header2">What I want to know</p>
+                        <ul class="card_text">
+                            <li>Undoing Changes</li>
+                            <li>Git Diff</li>
+                            <li>Rewriting Git History</li>
+                            <li>many more...</li>
+                        </ul>
+                    </div>
+                    <!-- Second Card = middle -->
+                    <div class="card_container" id="middle_card">
+                        <img src="./assets/images/icons8-console-100.png" alt="git image">
+                        <h2><b>Command Line</b></h2>
+                        <p>I have been using Linux for 2 years before transfering to windows WSL2.</p>
+                        <p class="card_header2">What I know</p>
+                        <ul class="card_text">
+                            <li>File Commands</li>
+                            <li>Installations</li>
+                            <li>Shortcuts</li>
+                            <li>Process management</li>
+                        </ul>
+                        <p class="card_header2">What I want to know</p>
+                        <ul class="card_text">
+                            <li>Compression</li>
+                            <li>Network</li>
+                            <li>SSH</li>
+                            <li>File Permissions</li>
+                            <li>many more...</li>
+                        </ul>
+                    </div>
+                    <!-- Third Card = right -->
+                    <div class="card_container" id="right_card">
+                        <img src="./assets/images/icons8-code-100.png" alt="git image">
+                        <h2><b>Programming</b></h2>
+                        <p>I know how to program different languages but only to a minimum. My first was Python.</p>
+                        <p class="card_header2">What I know</p>
+                        <ul class="card_text">
+                            <li>Python</li>
+                            <li>Basics of C++</li>
+                            <li>Scratch</li>
+                            <li>Basics of HTML and CSS</li>
+                        </ul>
+                        <p class="card_header2">What I want to know</p>
+                        <ul class="card_text">
+                            <li>MERN Stack</li>
+                            <li>all programming languages(basics)</li>
+                            <li>Cloud Development</li>
+                            <li>many more...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section Bootstrap Carousel -->
+        <section>
+            <div id="blog">
+                <div class="blog_title">BLOG</div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Blog -->
+                      <div class="carousel-item active">
+                        <a href="./placeholder.html" target="_blank">
+                            <img src="./assets/images/alex-knight-2EJCSULRwC8-unsplash.jpg" class="d-block w-100" alt="First Image">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="blog_head">ROBOTS</h5>
+                            <p class="blog_cont">When is the next terminator? and other questions about "AI"</p>
+                            <a class="blog_link" href="./placeholder.html" target="_blank">View All</a>
+                          </div>
+                      </div>
+                      <!-- Second Blog -->
+                      <div class="carousel-item">
+                        <a href="./placeholder.html" target="_blank">
+                            <img src="./assets/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" class="d-block w-100" alt="Second Image">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="blog_head">Programming</h5>
+                            <p class="blog_cont">Why is it so hard yet so fulfilling? and other questions about stress related subjects</p>
+                            <a class="blog_link" href="./placeholder.html" target="_blank">View All</a>
+                          </div>
+                      </div>
+                      <!-- Third Blog -->
+                      <div class="carousel-item">
+                        <a href="./placeholder.html" target="_blank">
+                            <img src="./assets/images/jakob-owens-7aM7i2lav8U-unsplash.jpg" class="d-block w-100" alt="Third Image">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="blog_head">GO PRO</h5>
+                            <p class="blog_cont">Why are they still not the standard of smartphone cameras? asked the dumb blogger</p>
+                            <a class="blog_link" href="./placeholder.html" target="_blank">View All</a>
+                          </div>
+                      </div>
+                      <!-- Fourth Blog -->
+                      <div class="carousel-item">
+                        <a href="./placeholder.html" target="_blank">
+                            <img src="./assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg" class="d-block w-100" alt="Fourth Image">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="blog_head">CLOUD STORAGE</h5>
+                            <p class="blog_cont">Are your data really safe in the cloud? Will they get wet? or bump into airplanes?</p>
+                            <a class="blog_link" href="./placeholder.html" target="_blank">View All</a>
+                          </div>
+                      </div>
+                    </div>
+                    <a class="blog_link" id="hide" href="./placeholder.html" target="_blank">View All</a>
+                    <!-- Right and Left Arrow Button -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section>
+            <div class="project_title">PROJECTS</div>
+            <div id="projects">
+                <div class="img_wrap">
+                    <img class="project_img"src="./assets/images/max-bender-3rNvnnO7avY-unsplash.jpg" alt="building image">
+                    <div class="project_overlay">
+                        <div class="project_desc">
+                            Bonjing Co. A quality provider of Residential and Commercial developments based on Tuguegarao City, Cagayan<br>
+                            <a href="./placeholder.html" target="_blank">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_wrap">
+                    <img class="project_img"src="./assets/images/prudence-earl-8F0I12ypHPA-unsplash.jpg" alt="clothes image">
+                    <div class="project_overlay">
+                        <div class="project_desc">
+                            Jenna's Clothing Co. Serving and Helping the Community since 2000.<br>
+                            <a href="./placeholder.html" target="_blank">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_wrap">
+                    <img class="project_img"src="./assets/images/markus-spiske-ZKNsVqbRSPE-unsplash.jpg" alt="carrot image">
+                    <div class="project_overlay">
+                        <div class="project_desc">
+                            Nicole's Farm Produce, fresh from the mountains of Cordillera.<br>
+                            <a href="./placeholder.html" target="_blank">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_wrap">
+                    <img class="project_img"src="./assets/images/roman-bozhko-OXXsAafHDeo-unsplash.jpg" alt="coffee image">
+                    <div class="project_overlay">
+                        <div class="project_desc">
+                            Apple Coffee Shop for the coffee lovers all around Manila.<br>
+                            <a href="./placeholder.html" target="_blank">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section>
+            <div id="contact">
+                <form action="#">
+                    <fieldset>
+                        <div class="row">
+                            <div class="contact_header">SAY HELLO</div>
+                            <div class="label">
+                              <label for="name">Name</label>
+                            </div>
+                            <div class="contact_form">
+                              <input type="text" id="name" name="name" placeholder="Your name..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="contact_form">
+                              <input type="text" id="email" name="email" placeholder="Your email..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">
+                              <label for="message">Message</label>
+                            </div>
+                            <div class="contact_form">
+                              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <input type="submit" value="Submit">
+                          </div>
+                    </fieldset>
+                    </form>
+            </div>
+        </section>
+        <section class="footer_main">
+            <div class="footer">
+                <p>&copy; 2022 Edreyel Adora</p>
+                <p>Images from the internet - icons by <a href="https://icons8.com/" target="_blank" style="color: inherit">Flaticon</a> and images from <a href="https://www.pexels.com/" target="_blank" style="color: inherit">Pexels</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

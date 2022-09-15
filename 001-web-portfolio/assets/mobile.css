@@ -1,0 +1,70 @@
+/* Universal Selector */
+*{
+    overflow-x: hidden;
+}
+
+/* Header */
+.home_header{
+    font-size: 2rem;
+}
+
+.header_btn{
+    font-size: 15px;
+}
+
+.abt_text1{
+    font-size: 1.5rem;
+}
+
+.abt_text2{
+    font-size: 15px;
+}
+
+/* #### Remove Nav #### */
+.nav_bar{
+    display: none;
+}
+
+/* Profile */
+.profile{
+    width: 10rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Cards */
+.cards{
+    flex-wrap: wrap;
+}
+
+#left_card,#right_card{
+    border-radius: 0%;
+}
+
+#left_card,#right_card,#middle_card{
+    border-radius: 5%;
+}
+
+#blog{
+    height: 100%;
+    width: 100%;
+    background-color:#5CDB95;
+    padding-bottom: 5rem;
+}
+
+#hide{
+    display: block;
+    background-color: #5CDB95;
+    text-decoration: none;
+}
+
+.carousel{
+    text-align: center;
+}
+
+/* Form */
+.label, .contact_form, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
