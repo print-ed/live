@@ -18,6 +18,46 @@
     width: max-content;
 }
 
+/* Hamburger */
+.nav_bar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name_title {
+    display: flex;
+    color: #5CDB95;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin:0;
+}
+
+.toggle_button {
+    display: flex;
+}
+
+.nav_links {
+    display: none;
+    width: 100%;
+}
+
+.nav_links ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav_links ul li {
+    text-align: center;
+}
+
+.nav_links ul li a {
+    padding: .5rem 1rem;
+}
+
+.nav_links.active {
+    display: flex;
+}
+
 /* About */
 .abt_text1{
     font-size: 1.5rem;
@@ -78,8 +118,6 @@
 
 .carousel{
     text-align: center;
-    width:20rem;
-    height:20rem;
 }
 
 /* Form */

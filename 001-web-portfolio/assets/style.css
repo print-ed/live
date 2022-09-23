@@ -63,21 +63,30 @@ h1>span{
 }
 
 .nav_links{
-    list-style: none;
-    margin-bottom: 5px;
+    height: 100%;
+}
+
+.nav_links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-    text-align: center;
+    list-style: none;
+}
+
+.name_title{
+    display: none;
 }
 
 /* Nav Animation */
 .nav_links li a{
+    display: block;
+    color: #EDF5E1;
+    padding: 1rem;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: #EDF5E1;
     font-size: 20px;
     font-weight: 600;
     word-spacing: 5px;
@@ -86,6 +95,26 @@ h1>span{
 .nav_links li a:hover{
     color: #5CDB95;
 }
+
+/* Navbar Hamburger */
+.toggle_button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle_button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 
 /* Header Button Animation */
 .header_btn {
