@@ -73,10 +73,6 @@ h1>span{
     text-align: center;
 }
 
-.hidden_nav{
-    display: none;
-}
-
 /* Nav Animation */
 .nav_links li a{
     transition: all 0.3s ease 0s;
