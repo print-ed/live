@@ -178,6 +178,7 @@ h1>span{
   
 .card_container {
     background-color: #379683;
+    text-align: center;
     width: 80%;
     margin: .5px;
     padding: 10px 2rem;
