@@ -1,23 +1,38 @@
 @font-face {
     font-family: Papyrus;
-    src: url(./assets/papyrus/PAPYRUS.TTF);
+    src: url(./assets/fonts/papyrus/PAPYRUS.TTF);
 }
 
 *{
     cursor: url(./assets/cursor/cursor.cur), default;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Start screen */
-body {
+
+/* Game display */
+#gameStart {
+    display: block;
     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/01073865290819.5d61d475f0072.jpg);
     background-size: cover;
     font-family: 'Papyrus', cursive;
+    min-height: 100vh;
 }
 
+#inGame {
+    display: none;
+}
+
+#endGame {
+    display: none;
+}
+
+/* Start screen */
 h1 {
     text-align: center;
     font-size: 150px;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin-bottom: 15%;
 }
 
 .gameStart {
