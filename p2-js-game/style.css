@@ -1,134 +1,127 @@
+/* Custoim font collections */
 @font-face {
-    font-family: Papyrus;
-    src: url(./assets/fonts/papyrus/PAPYRUS.TTF);
+    font-family: NightOfTheDamned;
+    src: url(./assets/fonts/cf-night-of-the-damned-font/CfNightOfTheDamnedRegular-ZZL3.ttf);
 }
 
-*{
-    cursor: url(./assets/cursor/cursor.cur), default;
+@font-face {
+    font-family: sharrpe;
+    src: url(./assets/fonts/sharrpe-gothik-font/SharrpeGothik-Mdyw.ttf);
+}
+
+/* Universal */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sharrpe;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #333;
 }
 
-/* Game display */
-    /* First Display */
-#gameStart {
-    display: block;
-    background-image: url(./assets/images/night-town-background-previewx1.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align:center;
-    font-family: 'Papyrus', cursive;
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
-    /* Second Display */
-#inGame {
+/* Header */
+h1 {
+    font-family: NightOfTheDamned;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main body */
+main {
     background-color: black;
-    color: black;
-    font-family: 'Papyrus', cursive;
-    font-weight: 900;
-    font-size: larger;
-    display: none;
+    display: flex;
+    height: 80%;
     justify-content: center;
     align-items: center;
+    background-color: #333;
 }
 
-/* Start screen */
-section {
-    min-height: 100vh;
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
 }
 
-.mainHeader {
-    text-align: center;
-    font-size: 150px;
-    font-weight: 900;
-    margin-bottom: 15%;
-    color: white;
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.gameStart {
-    display: flex;
-    text-decoration: none;
-    background-color: black;
-    padding: 2px;
-}
-
-.startButton  {
-    background-color: brown;
-    border: 2px solid black;
+.btn {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px 10px;
     color: black;
-    padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: red;
+}
+
+#text {
+    font-size: 30px;
     font-weight: 400;
-}
-
-.kingImg {
-    text-align: center;
-}
-
-.start {
-    text-align: center;
-}
-
-.name {
-    text-align: center;
-    margin-bottom: 15px;
-    font-weight: 900;
-    font-size: 25px;
-}
-
-#name {
-    height: 25px;
-}
-
-.enterName {
-    color: white;
-}
-
-/* Ingame Screen */
-.ingameContainer {
-    width: 80%;
-    height: auto;
-    background-color: black;
-    background-image: url(./assets/images/old-dark-castle-interior-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.topContainer {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.midContainer {
-    display: flex;
-    justify-content: space-around;
+/* animation for story description */
+span {
+    opacity: 0;
+    transition: all 1s ease;
 }
 
-.bottomContainer {
-    display: flex;
-    justify-content: center;
+span.fade {
+    opacity: 1;
 }
 
-/* Mid Container Contents */
-.hero {
-    height: 300px;
-    margin-top: 20%;
-    margin-bottom: 10%;
+/* start screen section */
+.start-button:hover {
+    border-color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.enemy {
+.start-button {
+    font-size: 50px;
+}
+
+/* fight screen section */
+.gameImage {
     height: 200px;
-    margin-top: 22%;
-    margin-bottom: 5%;
+    transition: all .2s ease-in-out; 
+    margin: 10px;
 }
 
-.attackBtn {
-    background-color: brown;
-    border: 2px solid black;
-    color: black;
-    padding: 5px;
-    font-size: 25px;
-    font-weight: 400;
+.gameImage:hover {
+    transform: scale(1.1); 
+}
+
+#result {
+    font-size: 50px;
+}
+
+#monster-win {
+    font-size: 50px;
+    text-align: center;
+}
+
+#player-win {
+    font-size: 50px;
+    text-align: center;
 }

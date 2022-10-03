@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lost King</title>
+    <title>Traveller Of The Damned</title>
     <!-- favicon -->
-    <link rel="icon" href="./assets/images/helm-icon.svg">
-    <!-- css styling -->
-    <link rel="stylesheet" href="style.css">
-    <!-- js script -->
-    <script src="script.js"></script>
+    <link rel="icon" href="./assets/images/hasty-grave.svg">
+    <!-- styling -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- js script-->
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <!-- Landing Page -->
-    <section id="gameStart">
-        <h1 class="mainHeader">The Lost King</h1>
-        <div class="kingImg">
-            <img src="./assets/images/hero-idle.gif" alt="hero gif">
-        </div>
-        <audio id="audioPlay" loop autoplay>
-            <source src="./assets/music/title-screen.mp3" type="audio/mp3">
-        </audio>
-        <div class="name">
-            <label class="enterName" for="name">Enter Name:</label><br>
-            <input type="text" id="name" size="20">
-        </div>
-        <div class="start">
-            <button class="startButton" onclick="startGame()">Start Game</button>
-        </div>
-    </section>
-    <section id="inGame">
-        <div class="ingameContainer">
-            <div class="topContainer">
-                <div class="heroCounter">health</div>
-                <div class="fightTxt">FIGHT</div>
-                <div class="enemyCounter">health</div>
-            </div>
-            <div class="midContainer">
-                <img class="hero" src="./assets/images/hero-idle.gif" alt="hero image">
-                <img class="enemy" src="./assets/images/fire-skull-no-fire.gif" alt="fire skull image">
-            </div>
-            <div class="bottomContainer">
-                <button class="attackBtn" onclick="">Attack</button>
-            </div>
-        </div>
-    </section>
+    <header id="header-content">
+        <h1>Traveller Of The Damned</h1>
+    </header>
+    <main id="main-content">
+        <section id="start-screen" class="start-screen" style="display: block;"> 
+            <button class="start-button" onclick="playGame()">PLAY GAME</button>
+        </section>
+        <section id="option-screen" class="option-screen" style="display: none;">
+            <div class="option-container">
+                <div id="text"></div>
+                <div id="option-buttons" class="btn-grid">
+                  <button class="btn">Option 1</button>
+                  <button class="btn">Option 2</button>
+                  <button class="btn">Option 3</button>
+                  <button class="btn">Option 4</button>
+                </div>
+            </div> 
+        </section>
+        <section id="fight-screen" class="fight-screen" style="display: none;">
+            <div>
+                <input type="image" class="gameImage" src="./assets/images/rock.svg" value="rock"></input>
+                <input type="image" class="gameImage" src="./assets/images/paper.svg" value="paper"></input>
+                <input type="image" class="gameImage" src="./assets/images/scissors.svg" value="scissor"></input>
+              </div>
+              <div id="result"></div> 
+        </section>
+        <section id="monster-win">
+        </section>
+        <section id="player-win">
+        </section>
+    </main>
 </body>
 </html>
