@@ -11,35 +11,46 @@
 }
 
 /* Game display */
+    /* First Display */
 #gameStart {
     display: block;
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/01073865290819.5d61d475f0072.jpg);
+    background-image: url(./assets/images/night-town-background-previewx1.png);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
     font-family: 'Papyrus', cursive;
-    min-height: 100vh;
 }
 
+    /* Second Display */
 #inGame {
+    background-color: black;
+    color: black;
+    font-family: 'Papyrus', cursive;
+    font-weight: 900;
+    font-size: larger;
     display: none;
-}
-
-#endGame {
-    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Start screen */
-h1 {
+section {
+    min-height: 100vh;
+}
+
+.mainHeader {
     text-align: center;
     font-size: 150px;
     font-weight: 900;
     margin-bottom: 15%;
+    color: white;
 }
 
 .gameStart {
     display: flex;
-
     text-decoration: none;
-    background-color: brown;
+    background-color: black;
     padding: 2px;
 }
 
@@ -69,4 +80,55 @@ h1 {
 
 #name {
     height: 25px;
+}
+
+.enterName {
+    color: white;
+}
+
+/* Ingame Screen */
+.ingameContainer {
+    width: 80%;
+    height: auto;
+    background-color: black;
+    background-image: url(./assets/images/old-dark-castle-interior-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.midContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Mid Container Contents */
+.hero {
+    height: 300px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.enemy {
+    height: 200px;
+    margin-top: 22%;
+    margin-bottom: 5%;
+}
+
+.attackBtn {
+    background-color: brown;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 400;
 }

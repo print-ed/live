@@ -1,8 +1,11 @@
 // Game display
 function startGame() {
-    let nameLength = document.getElementById("name")
+    let nameLength = document.getElementById("name");
+    let start = document.getElementById("gameStart");
+    let ingame = document.getElementById("inGame");
+    let end = document.getElementById("inGame");
     // get the value user name and convert it to an array
-    let lengthContainer = nameLength.value.split('')
+    let lengthContainer = nameLength.value.split('');
     //then use if else to look if the array length is less than, equal, or more than the number given
     if (lengthContainer.length === 0) {
         alert("NAME IS EMPTY")
@@ -15,20 +18,8 @@ function startGame() {
     }
     // value above are false then go to next screen
     else {
-        let start = document.getElementById("gameStart")
-        let ingame = document.getElementById("inGame")
-        let end = document.getElementById("inGame")
         start.style.display = "none";
-        ingame.style.display = "block";
-        end.style.display = "none";
+        ingame.style.display = "flex";
     }
 }
 
-function gameOver() {
-    let start = document.getElementById("gameStart")
-    let ingame = document.getElementById("inGame")
-    let end = document.getElementById("inGame")
-    start.style.display = "none";
-    ingame.style.display = "none";
-    end.style.display = "block";
-}

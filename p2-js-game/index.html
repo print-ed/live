@@ -13,10 +13,11 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <!-- Landing Page -->
     <section id="gameStart">
-        <h1>The Lost King</h1>
+        <h1 class="mainHeader">The Lost King</h1>
         <div class="kingImg">
-            <img src="./assets/images/king-idle.gif" alt="king gif">
+            <img src="./assets/images/hero-idle.gif" alt="hero gif">
         </div>
         <audio id="audioPlay" loop autoplay>
             <source src="./assets/music/title-screen.mp3" type="audio/mp3">
@@ -30,10 +31,20 @@
         </div>
     </section>
     <section id="inGame">
-
-    </section>
-    <section id="gameEnd">
-
+        <div class="ingameContainer">
+            <div class="topContainer">
+                <div class="heroCounter">health</div>
+                <div class="fightTxt">FIGHT</div>
+                <div class="enemyCounter">health</div>
+            </div>
+            <div class="midContainer">
+                <img class="hero" src="./assets/images/hero-idle.gif" alt="hero image">
+                <img class="enemy" src="./assets/images/fire-skull-no-fire.gif" alt="fire skull image">
+            </div>
+            <div class="bottomContainer">
+                <button class="attackBtn" onclick="">Attack</button>
+            </div>
+        </div>
     </section>
 </body>
 </html>
