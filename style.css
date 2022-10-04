@@ -1,12 +1,12 @@
 /* Custoim font collections */
 @font-face {
     font-family: NightOfTheDamned;
-    src: url(./assets/fonts/cf-night-of-the-damned-font/CfNightOfTheDamnedRegular-ZZL3.ttf);
+    src: url(./p2-js-game/assets/fonts/cf-night-of-the-damned-font/CfNightOfTheDamnedRegular-ZZL3.ttf);
 }
 
 @font-face {
     font-family: sharrpe;
-    src: url(./assets/fonts/sharrpe-gothik-font/SharrpeGothik-Mdyw.ttf);
+    src: url(./p2-js-game/assets/fonts/sharrpe-gothik-font/SharrpeGothik-Mdyw.ttf);
 }
 
 /* Universal */
