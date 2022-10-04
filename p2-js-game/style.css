@@ -1,0 +1,127 @@
+/* Custoim font collections */
+@font-face {
+    font-family: NightOfTheDamned;
+    src: url(./assets/fonts/cf-night-of-the-damned-font/CfNightOfTheDamnedRegular-ZZL3.ttf);
+}
+
+@font-face {
+    font-family: sharrpe;
+    src: url(./assets/fonts/sharrpe-gothik-font/SharrpeGothik-Mdyw.ttf);
+}
+
+/* Universal */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sharrpe;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+h1 {
+    font-family: NightOfTheDamned;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main body */
+main {
+    background-color: black;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: red;
+}
+
+#text {
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* animation for story description */
+span {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+span.fade {
+    opacity: 1;
+}
+
+/* start screen section */
+.start-button:hover {
+    border-color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.start-button {
+    font-size: 50px;
+}
+
+/* fight screen section */
+.gameImage {
+    height: 200px;
+    transition: all .2s ease-in-out; 
+    margin: 10px;
+}
+
+.gameImage:hover {
+    transform: scale(1.1); 
+}
+
+#result {
+    font-size: 50px;
+}
+
+#monster-win {
+    font-size: 50px;
+    text-align: center;
+}
+
+#player-win {
+    font-size: 50px;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller Of The Damned</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/hasty-grave.svg">
+    <!-- styling -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- js script-->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header id="header-content">
+        <h1>Traveller Of The Damned</h1>
+    </header>
+    <main id="main-content">
+        <section id="start-screen" class="start-screen" style="display: block;"> 
+            <button class="start-button" onclick="playGame()">PLAY GAME</button>
+        </section>
+        <section id="option-screen" class="option-screen" style="display: none;">
+            <div class="option-container">
+                <div id="text"></div>
+                <div id="option-buttons" class="btn-grid">
+                  <button class="btn">Option 1</button>
+                  <button class="btn">Option 2</button>
+                  <button class="btn">Option 3</button>
+                  <button class="btn">Option 4</button>
+                </div>
+            </div> 
+        </section>
+        <section id="fight-screen" class="fight-screen" style="display: none;">
+            <div>
+                <input type="image" class="gameImage" src="./assets/images/rock.svg" value="rock"></input>
+                <input type="image" class="gameImage" src="./assets/images/paper.svg" value="paper"></input>
+                <input type="image" class="gameImage" src="./assets/images/scissors.svg" value="scissor"></input>
+              </div>
+              <div id="result"></div> 
+        </section>
+        <section id="monster-win">
+        </section>
+        <section id="player-win">
+        </section>
+    </main>
+</body>
+</html>
